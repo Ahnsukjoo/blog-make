@@ -88,7 +88,7 @@ class BlogApiControllerTest {
             .content(content)
             .build());
 
-        // when
+            // when
         final ResultActions resultActions = mockMvc.perform(get(url)
             .accept(MediaType.APPLICATION_JSON));
 
