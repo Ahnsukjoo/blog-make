@@ -3,6 +3,7 @@ package me.shinsunyoung.springbootdeveloper.config.jwt;
 import io.jsonwebtoken.Jwts;
 import me.shinsunyoung.springbootdeveloper.domain.User;
 import me.shinsunyoung.springbootdeveloper.repository.UserRepository;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,11 @@ class TokenProviderTest {
 
     @Autowired
     private JwtProperties jwtProperties;
+
+    @BeforeEach
+    void setUp() {
+        System.out.println("Secret Key: " + jwtProperties.getSecretKey());
+    }
 
     @DisplayName("generateToken(): 유저 정보와 만료 기간을 전달해 토큰을 만들 수 있다.")
     @Test
