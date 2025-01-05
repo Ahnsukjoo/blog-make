@@ -66,7 +66,9 @@ public class WebSecurityConfig {
 import static org.springframework.boot.autoconfigure.security.servlet.PathRequest.toH2Console;
 
 import lombok.RequiredArgsConstructor;
+import me.shinsunyoung.springbootdeveloper.config.jwt.TokenAuthenticationFilter;
 import me.shinsunyoung.springbootdeveloper.config.jwt.TokenProvider;
+import me.shinsunyoung.springbootdeveloper.config.oauth.OAuth2AuthorizationRequestBasedOnCookieRepository;
 import me.shinsunyoung.springbootdeveloper.repository.RefreshTokenRepository;
 import me.shinsunyoung.springbootdeveloper.service.UserService;
 import org.springframework.context.annotation.Bean;
@@ -76,6 +78,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
@@ -129,5 +132,29 @@ public class WebSecurityConfig {
                 ))
             .build();
 
+    }
+
+    @Bean
+    public OAuth2SuccessHandler oAuth2SuccessHandler() {
+        return new OAuth2SuccessHandler(tokenProvider,
+            refreshTokenRepository,
+            oAuth2AuthorizationRequestBasedOnCookieRepository(),
+            userService
+        );
+    }
+
+    @Bean
+    public TokenAuthenticationFilter tokenAuthenticationFilter() {
+        return new TokenAuthenticationFilter(tokenProvider);
+    }
+
+    @Bean
+    public OAuth2AuthorizationRequestBasedOnCookieRepository oAuth2AuthorizationRequestBasedOnCookieRepository() {
+        return new OAuth2AuthorizationRequestBasedOnCookieRepository();
+    }
+
+    @Bean
+    public BCryptPasswordEncoder bCryptPasswordEncoder() {
+        return new BCryptPasswordEncoder();
     }
 }
