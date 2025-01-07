@@ -1,6 +1,5 @@
 package me.shinsunyoung.springbootdeveloper.dto;
 
-import java.lang.reflect.AnnotatedType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,10 +14,11 @@ public class AddArticleRequest {
 
     private String content;
 
-    public Article toEntity() {
+    public Article toEntity(String author) {
         return Article.builder()
             .title(title)
             .content(content)
+            .author(author)
             .build();
     }
 }

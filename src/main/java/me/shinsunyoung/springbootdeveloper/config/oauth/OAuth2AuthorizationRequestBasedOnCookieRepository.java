@@ -28,9 +28,9 @@ public class OAuth2AuthorizationRequestBasedOnCookieRepository implements
     }
 
     @Override
-    public void saveAuthorizationRequest(OAuth2AuthorizationRequest auth2AuthorizationRequest,
+    public void saveAuthorizationRequest(OAuth2AuthorizationRequest authorizationRequest,
         HttpServletRequest request, HttpServletResponse response) {
-        if (auth2AuthorizationRequest == null) {
+        if (authorizationRequest == null) {
             removeAuthorizationRequestCookies(request, response);
             return;
         }

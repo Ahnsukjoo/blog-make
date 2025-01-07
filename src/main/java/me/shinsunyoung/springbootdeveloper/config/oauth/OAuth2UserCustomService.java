@@ -1,4 +1,4 @@
-package me.shinsunyoung.springbootdeveloper.config;
+package me.shinsunyoung.springbootdeveloper.config.oauth;
 
 import java.util.Map;
 import lombok.RequiredArgsConstructor;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
 @Service
-public class OAuth2UserCustomerService extends DefaultOAuth2UserService {
+public class OAuth2UserCustomService extends DefaultOAuth2UserService {
 
     private final UserRepository userRepository;
 
