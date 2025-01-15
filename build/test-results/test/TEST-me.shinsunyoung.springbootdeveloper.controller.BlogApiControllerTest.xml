@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="me.shinsunyoung.springbootdeveloper.controller.BlogApiControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-01-14T05:35:50" hostname="DESKTOP-863PPO9" time="0.585">
+<testsuite name="me.shinsunyoung.springbootdeveloper.controller.BlogApiControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-01-15T11:17:17" hostname="DESKTOP-863PPO9" time="0.54">
   <properties/>
-  <testcase name="deleteArticle: 아티클 삭제에 성공한다." classname="me.shinsunyoung.springbootdeveloper.controller.BlogApiControllerTest" time="0.267"/>
-  <testcase name="findArticle: 아티클 단건 조회에 성공한다." classname="me.shinsunyoung.springbootdeveloper.controller.BlogApiControllerTest" time="0.096"/>
-  <testcase name="findAllArticles: 아티클 목록 조회에 성공한다." classname="me.shinsunyoung.springbootdeveloper.controller.BlogApiControllerTest" time="0.023"/>
-  <testcase name="addArticle: 아티클 추가에 성공한다." classname="me.shinsunyoung.springbootdeveloper.controller.BlogApiControllerTest" time="0.164"/>
-  <testcase name="updateArticle: 아티클 수정에 성공한다." classname="me.shinsunyoung.springbootdeveloper.controller.BlogApiControllerTest" time="0.03"/>
-  <system-out><![CDATA[2025-01-14T14:35:49.961+09:00  INFO 25340 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [me.shinsunyoung.springbootdeveloper.controller.BlogApiControllerTest]: BlogApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-01-14T14:35:49.984+09:00  INFO 25340 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration me.shinsunyoung.springbootdeveloper.SpringBootDeveloperApplication for test class me.shinsunyoung.springbootdeveloper.controller.BlogApiControllerTest
+  <testcase name="deleteArticle: 아티클 삭제에 성공한다." classname="me.shinsunyoung.springbootdeveloper.controller.BlogApiControllerTest" time="0.253"/>
+  <testcase name="findArticle: 아티클 단건 조회에 성공한다." classname="me.shinsunyoung.springbootdeveloper.controller.BlogApiControllerTest" time="0.089"/>
+  <testcase name="findAllArticles: 아티클 목록 조회에 성공한다." classname="me.shinsunyoung.springbootdeveloper.controller.BlogApiControllerTest" time="0.022"/>
+  <testcase name="addArticle: 아티클 추가에 성공한다." classname="me.shinsunyoung.springbootdeveloper.controller.BlogApiControllerTest" time="0.143"/>
+  <testcase name="updateArticle: 아티클 수정에 성공한다." classname="me.shinsunyoung.springbootdeveloper.controller.BlogApiControllerTest" time="0.029"/>
+  <system-out><![CDATA[2025-01-15T20:17:16.497+09:00  INFO 21128 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [me.shinsunyoung.springbootdeveloper.controller.BlogApiControllerTest]: BlogApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-15T20:17:16.518+09:00  INFO 21128 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration me.shinsunyoung.springbootdeveloper.SpringBootDeveloperApplication for test class me.shinsunyoung.springbootdeveloper.controller.BlogApiControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -17,16 +17,16 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.2)
 
-2025-01-14T14:35:50.027+09:00  INFO 25340 --- [    Test worker] m.s.s.controller.BlogApiControllerTest   : Starting BlogApiControllerTest using Java 17.0.10 with PID 25340 (started by ASJ in C:\blog-make\blog-make\springboot-developer)
-2025-01-14T14:35:50.027+09:00  INFO 25340 --- [    Test worker] m.s.s.controller.BlogApiControllerTest   : No active profile set, falling back to 1 default profile: "default"
-2025-01-14T14:35:50.243+09:00  INFO 25340 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-14T14:35:50.264+09:00  INFO 25340 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
-2025-01-14T14:35:50.364+09:00  INFO 25340 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-01-14T14:35:50.367+09:00  INFO 25340 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:49014ef8-49f7-473f-87c6-603f9ec52fd2 user=SA
-2025-01-14T14:35:50.367+09:00  INFO 25340 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-01-14T14:35:50.370+09:00  INFO 25340 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-14T14:35:50.377+09:00  WARN 25340 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2025-01-14T14:35:50.384+09:00  INFO 25340 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-15T20:17:16.552+09:00  INFO 21128 --- [    Test worker] m.s.s.controller.BlogApiControllerTest   : Starting BlogApiControllerTest using Java 17.0.10 with PID 21128 (started by ASJ in C:\blog-make\blog-make\springboot-developer)
+2025-01-15T20:17:16.552+09:00  INFO 21128 --- [    Test worker] m.s.s.controller.BlogApiControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2025-01-15T20:17:16.802+09:00  INFO 21128 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-15T20:17:16.822+09:00  INFO 21128 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2025-01-15T20:17:16.960+09:00  INFO 21128 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-01-15T20:17:16.964+09:00  INFO 21128 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:a8606111-fe33-40e7-8e15-60f07485f943 user=SA
+2025-01-15T20:17:16.964+09:00  INFO 21128 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-01-15T20:17:16.966+09:00  INFO 21128 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-15T20:17:16.973+09:00  WARN 21128 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2025-01-15T20:17:16.979+09:00  INFO 21128 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: 
     
     drop table if exists article cascade 
@@ -76,26 +76,26 @@ Hibernate:
     
     alter table if exists users 
        add constraint UK_2ty1xmrrgtn89xt7kyxx6ta7h unique (nickname)
-2025-01-14T14:35:50.456+09:00  INFO 25340 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2025-01-14T14:35:50.456+09:00  INFO 25340 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-14T14:35:50.555+09:00  WARN 25340 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-14T14:35:50.640+09:00  INFO 25340 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3020f22, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a40e660, org.springframework.security.web.context.SecurityContextHolderFilter@7356ec91, org.springframework.security.web.header.HeaderWriterFilter@1da2219c, org.springframework.security.web.authentication.logout.LogoutFilter@2b3fd4d2, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@514f2b5c, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@f3cc2e0, me.shinsunyoung.springbootdeveloper.config.jwt.TokenAuthenticationFilter@6314e967, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f803fae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33224703, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a57ad67, org.springframework.security.web.session.SessionManagementFilter@49a46f29, org.springframework.security.web.access.ExceptionTranslationFilter@5ea24702, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7475f57e]
-2025-01-14T14:35:50.687+09:00  INFO 25340 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:49014ef8-49f7-473f-87c6-603f9ec52fd2'
-2025-01-14T14:35:50.702+09:00  WARN 25340 --- [    Test worker] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore org.springframework.boot.autoconfigure.security.servlet.PathRequest$H2ConsoleRequestMatcher@7296675e. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2025-01-14T14:35:50.702+09:00  INFO 25340 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will not secure org.springframework.boot.autoconfigure.security.servlet.PathRequest$H2ConsoleRequestMatcher@7296675e
-2025-01-14T14:35:50.702+09:00  WARN 25340 --- [    Test worker] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2025-01-14T14:35:50.703+09:00  INFO 25340 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/img/**']
-2025-01-14T14:35:50.703+09:00  WARN 25340 --- [    Test worker] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2025-01-14T14:35:50.703+09:00  INFO 25340 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/css/**']
-2025-01-14T14:35:50.703+09:00  WARN 25340 --- [    Test worker] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2025-01-14T14:35:50.703+09:00  INFO 25340 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/js/**']
-2025-01-14T14:35:50.749+09:00  INFO 25340 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-01-14T14:35:50.749+09:00  INFO 25340 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-01-14T14:35:50.751+09:00  INFO 25340 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2025-01-14T14:35:50.758+09:00  INFO 25340 --- [    Test worker] m.s.s.controller.BlogApiControllerTest   : Started BlogApiControllerTest in 0.768 seconds (process running for 7.979)
-2025-01-14T14:35:50.763+09:00  INFO 25340 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-01-14T14:35:50.763+09:00  INFO 25340 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-01-14T14:35:50.764+09:00  INFO 25340 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-01-15T20:17:17.043+09:00  INFO 21128 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-15T20:17:17.044+09:00  INFO 21128 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15T20:17:17.151+09:00  WARN 21128 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-15T20:17:17.244+09:00  INFO 21128 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1d63f6be, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23a0c7f3, org.springframework.security.web.context.SecurityContextHolderFilter@77227b1f, org.springframework.security.web.header.HeaderWriterFilter@57421e4e, org.springframework.security.web.authentication.logout.LogoutFilter@5915ab69, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@7356ec91, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@3f803fae, me.shinsunyoung.springbootdeveloper.config.jwt.TokenAuthenticationFilter@7d14efc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73136174, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34e4a136, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21b96db, org.springframework.security.web.session.SessionManagementFilter@5a75bad4, org.springframework.security.web.access.ExceptionTranslationFilter@623cd12e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49a46f29]
+2025-01-15T20:17:17.308+09:00  INFO 21128 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:a8606111-fe33-40e7-8e15-60f07485f943'
+2025-01-15T20:17:17.327+09:00  WARN 21128 --- [    Test worker] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore org.springframework.boot.autoconfigure.security.servlet.PathRequest$H2ConsoleRequestMatcher@6ee0ef34. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-01-15T20:17:17.327+09:00  INFO 21128 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will not secure org.springframework.boot.autoconfigure.security.servlet.PathRequest$H2ConsoleRequestMatcher@6ee0ef34
+2025-01-15T20:17:17.327+09:00  WARN 21128 --- [    Test worker] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-01-15T20:17:17.327+09:00  INFO 21128 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/img/**']
+2025-01-15T20:17:17.327+09:00  WARN 21128 --- [    Test worker] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-01-15T20:17:17.327+09:00  INFO 21128 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/css/**']
+2025-01-15T20:17:17.327+09:00  WARN 21128 --- [    Test worker] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Mvc [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-01-15T20:17:17.327+09:00  INFO 21128 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will not secure Mvc [pattern='/js/**']
+2025-01-15T20:17:17.374+09:00  INFO 21128 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-01-15T20:17:17.374+09:00  INFO 21128 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-01-15T20:17:17.376+09:00  INFO 21128 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-01-15T20:17:17.385+09:00  INFO 21128 --- [    Test worker] m.s.s.controller.BlogApiControllerTest   : Started BlogApiControllerTest in 0.862 seconds (process running for 7.681)
+2025-01-15T20:17:17.392+09:00  INFO 21128 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-01-15T20:17:17.392+09:00  INFO 21128 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-01-15T20:17:17.393+09:00  INFO 21128 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
 Hibernate: 
     select
         a1_0.id,
@@ -192,9 +192,9 @@ Hibernate:
         a1_0.updated_at 
     from
         article a1_0
-2025-01-14T14:35:51.031+09:00  INFO 25340 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-01-14T14:35:51.032+09:00  INFO 25340 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-01-14T14:35:51.032+09:00  INFO 25340 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-01-15T20:17:17.646+09:00  INFO 21128 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-01-15T20:17:17.646+09:00  INFO 21128 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-01-15T20:17:17.647+09:00  INFO 21128 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
 Hibernate: 
     select
         a1_0.id,
@@ -245,9 +245,9 @@ Hibernate:
         article a1_0 
     where
         a1_0.id=?
-2025-01-14T14:35:51.129+09:00  INFO 25340 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-01-14T14:35:51.129+09:00  INFO 25340 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-01-14T14:35:51.130+09:00  INFO 25340 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-01-15T20:17:17.736+09:00  INFO 21128 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-01-15T20:17:17.736+09:00  INFO 21128 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-01-15T20:17:17.737+09:00  INFO 21128 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
 Hibernate: 
     select
         a1_0.id,
@@ -302,9 +302,9 @@ Hibernate:
         a1_0.updated_at 
     from
         article a1_0
-2025-01-14T14:35:51.153+09:00  INFO 25340 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-01-14T14:35:51.153+09:00  INFO 25340 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-01-14T14:35:51.154+09:00  INFO 25340 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-01-15T20:17:17.759+09:00  INFO 21128 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-01-15T20:17:17.759+09:00  INFO 21128 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-01-15T20:17:17.760+09:00  INFO 21128 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
 Hibernate: 
     select
         a1_0.id,
@@ -359,9 +359,9 @@ Hibernate:
         a1_0.updated_at 
     from
         article a1_0
-2025-01-14T14:35:51.318+09:00  INFO 25340 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2025-01-14T14:35:51.318+09:00  INFO 25340 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2025-01-14T14:35:51.319+09:00  INFO 25340 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-01-15T20:17:17.902+09:00  INFO 21128 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-01-15T20:17:17.902+09:00  INFO 21128 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-01-15T20:17:17.903+09:00  INFO 21128 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
 Hibernate: 
     select
         a1_0.id,
